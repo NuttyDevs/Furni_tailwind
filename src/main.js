@@ -11,7 +11,7 @@ menuClose.addEventListener("click", function () {
 
 //======  swiper =======
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
+  slidesPerView: 3,
   spaceBetween: 10,
   loop: true,
   navigation: {
@@ -20,16 +20,31 @@ var swiper = new Swiper(".mySwiper", {
   },
   breakpoints: {
     640: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 4,
+      slidesPerView: 2,
       spaceBetween: 40,
     },
     1024: {
-      slidesPerView: 5,
+      slidesPerView: 3,
       spaceBetween: 50,
     },
   },
+});
+
+//======= swiper corusel
+var swiper = new Swiper(".mySwiper_t", {
+  cssMode: true,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  mousewheel: true,
+  keyboard: true,
 });
