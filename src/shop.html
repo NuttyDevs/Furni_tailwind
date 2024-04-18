@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ====  icon  ===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- ======  swiper ==== -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header" class="bg-primary h-[900px]">
+      <div class="max-w-full xl:px-32 px-20">
+        <nav class="py-20 flex justify-between items-center">
+          <div class="text-white text-4xl font-roboto font-semibold flex-grow">
+            Furni
+          </div>
+          <div
+            class="lg:flex gap-6 sm:hidden md:hidden text-white text-xl font-semibold"
+          >
+            <a
+              href="index.html"
+              class="text-xl hover:text-secondary hover:border-b border-secondary"
+            >
+              Home
+            </a>
+            <a
+              href="shop.html"
+              class="hover:text-secondary hover:border-b border-secondary"
+            >
+              Shop
+            </a>
+            <a
+              href="about.html"
+              class="hover:text-secondary hover:border-b border-secondary"
+            >
+              About us
+            </a>
+            <a
+              href="contact.html"
+              class="hover:text-secondary hover:border-b border-secondary"
+            >
+              Contact us
+            </a>
+            <div class="pl-12">
+              <div class="flex justify-between gap-4">
+                <i
+                  class="ri-shopping-cart-2-line hover:text-secondary hover:border-b border-secondary"
+                ></i>
+                <i
+                  class="ri-user-3-line hover:text-secondary hover:border-b border-secondary"
+                ></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-white text-3xl focus:outline-none sm:flex lg:hidden">
+            <button id="menu-btn">
+              <i class="ri-menu-line"></i>
+            </button>
+          </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div
+          id="menu-close"
+          class="absolute top-0 bottom-0 left-0 flex-col self-end w-full min-h-screen py-1 pl-12 space-y-3 text-lg text-primary uppercase bg-third hidden lg:hidden"
+        >
+          <div class="text-3xl font-bold text-end pr-8 mt-12">
+            <i
+              class="ri-close-line hover:text-secondary hover:border-b-2 border-secondary"
+            ></i>
+          </div>
+          <div class="flex flex-col items-center space-y-4">
+            <a
+              href="shop.html"
+              class="hover:text-secondary hover:border-b-2 border-secondary hover:duration-300"
+              >shop</a
+            >
+
+            <a
+              href="about.html"
+              class="hover:text-secondary hover:border-b-2 border-secondary hover:duration-300"
+              >About</a
+            >
+            <a
+              href="contact.html"
+              class="hover:text-secondary hover:border-b-2 border-secondary hover:duration-300"
+              >Contatct</a
+            >
+            <a
+              href="cart.html"
+              class="hover:text-secondary hover:border-b-2 border-secondary hover:duration-300"
+              >Carts</a
+            >
+            <a
+              href="login.html"
+              class="hover:text-secondary hover:border-b-2 border-secondary hover:duration-300"
+              >Login</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <section id="hero">
+        <div class="max-w-full xl:px-32 px-20 lg:grid grid-cols-12 mt-20">
+          <!-- Left content -->
+          <div class="lg:col-span-4">
+            <h1 class="text-4xl text-white font-bold mb-12">
+              Shopping
+            </h1>
+            <h3 class="text-medium text-third">
+              Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet
+              velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+            </h3>
+
+            <div class="mt-6">
+              <button
+                class="text-gray-800 text-lg font-bold px-8 py-4 right-2 bg-secondary hover:bg-yellow-400 rounded-3xl"
+              >
+                Shop Now
+              </button>
+              <button
+                class="text-white text-lg font-bold px-8 py-4 bg-transparent border border-third hover:border-white rounded-3xl"
+              >
+                Explore
+              </button>
+            </div>
+          </div>
+          <!-- Left content end-->
+          <!-- right imge -->
+          <div class="lg:col-span-8">
+            <div class="w-full">
+              <img src="../images/couch.png" alt="" class="" />
+            </div>
+          </div>
+          <!-- right imge -end-->
+        </div>
+      </section>
+    </header>
+    <!-- shop product -->
+    <section id="shop">
+      <div class="max-w-full xl:px-32 px-20 gap-20 bg-white">
+        <!-- product -->
+        <div
+          class="xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 sm:grid-cols-1 gap-6"
+        >
+         <div
+        class="m-12 shadow-md transition ease-in-out delay-150 hover:-translate-y-6 duration-150"
+         >
+          <img src="../images/product-1.png" class="" />
+        </div>
+        <div
+         class="m-12 shadow-md transition ease-in-out delay-150 hover:-translate-y-6 duration-150"
+       >
+         <img src="../images/product-2.png" class="" />
+        </div>
+        <div
+          class="m-12 shadow-md transition ease-in-out delay-150 hover:-translate-y-6 duration-150"
+         >
+        <img src="../images/product-3.png" class="" />
+        </div> 
+       <div
+        class="m-12 shadow-md transition ease-in-out delay-150 hover:-translate-y-6 duration-150"
+        >
+        <img src="../images/product-1.png" class="" />
+       </div>
+       <div
+       class="m-12 shadow-md transition ease-in-out delay-150 hover:-translate-y-6 duration-150"
+        >
+         <img src="../images/product-1.png" class="" />
+       </div>
+       <div
+        class="m-12 shadow-md transition ease-in-out delay-150 hover:-translate-y-6 duration-150"
+      >
+        <img src="../images/product-2.png" class="" />
+       </div>
+       <div
+         class="m-12 shadow-md transition ease-in-out delay-150 hover:-translate-y-6 duration-150"
+        >
+       <img src="../images/product-3.png" class="" />
+       </div> 
+      <div
+       class="m-12 shadow-md transition ease-in-out delay-150 hover:-translate-y-6 duration-150"
+       >
+       <img src="../images/product-1.png" class="" />
+      </div>
+    </div>
+    <!-- product end-->
+  </section>
+  <!-- shop product end -->
+        
+        
+
+        
+    
+      
+
+
+
+    <!-- newsletter -->
+    <section id="newsletter">
+      <div class="max-w-full xl:px-32 px-20 gap-20 bg-third">
+        <div class="lg:grid grid-cols-12">
+          <!-- grid left -->
+          <div class="lg:col-span-8">
+            <div class="flex text-center gap-2 text-gray-700 mb-6">
+              <i class="ri-mail-line mt-12"></i>
+              <p class="text-xl text-gray-800 mt-12">Subscribe to Newsletter</p>
+            </div>
+            <div class="lg:grid grid-cols-8 gap-4 items-baseline">
+              <div class="lg:col-span-3">
+                <input
+                  type="email"
+                  placeholder="Enter your name"
+                  class="text-sm rounded-lg text-primary border border-primary mb-6 w-full"
+                />
+              </div>
+
+              <div class="lg:col-span-3">
+                <input
+                  type="password"
+                  placeholder="Enter your password"
+                  class="text-sm rounded-lg text-primary border border-primary mb-6 w-full"
+                />
+              </div>
+              <div class="lg:col-span-2">
+                <label
+                  class="bg-primary text-white rounded-lg px-6 py-2 hover:bg-transparent hover:border border-primary hover:text-primary"
+                >
+                  <i class="ri-send-plane-fill"></i>
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- grid left end -->
+
+          <!-- grid right  -->
+          <div class="lg:col-span-4 lg:scale-y-150">
+            <img src="../images/sofa.png" alt="" />
+          </div>
+          <!-- grid right  end-->
+        </div>
+      </div>
+    </section>
+    <!-- newsletter end-->
+
+    <!-- footer -->
+    <section id="footer">
+      <div class="max-w-full xl:px-32 px-20 gap-20 bg-third">
+        <h2 class="text-3xl text-primary font-medium mb-6">Furni</h2>
+        <!-- grid footer -->
+        <div class="lg:grid grid-cols-12">
+          <!-- grid logo -->
+          <div class="lg:col-span-4 pr-12">
+            <p class="text-sm text-gray-600">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+              excepturi commodi ratione rerum quisquam omnis. Iste error tempore
+              excepturi in quis delectus reiciendis odio eligendi ut voluptatem,
+              saepe est delectus reiciendis odio eligendi ut voluptatem, saepe
+              est
+            </p>
+            <div class="flex gap-4 mt-6 mb-12">
+              <i
+                class="ri-facebook-line bg-primary text-white rounded-full p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+              ></i>
+              <i
+                class="ri-twitter-x-line bg-primary text-white rounded-full p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+              ></i>
+              <i
+                class="ri-instagram-line bg-primary text-white rounded-full p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+              ></i>
+              <i
+                class="ri-line-line bg-primary text-white rounded-full p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+              ></i>
+            </div>
+          </div>
+          <!-- grid logo end -->
+
+          <!-- grid link -->
+          <div class="lg:col-span-8">
+            <div class="grid-cols-4">
+              <div class="flex justify-between">
+                <div class="col-span-4 mb-16">
+                  <p class="text-sm text-gray-600">About us</p>
+                  <p class="text-sm text-gray-600">Services</p>
+                  <p class="text-sm text-gray-600">Blog</p>
+                  <p class="text-sm text-gray-600">Contact us</p>
+                </div>
+                <div class="col-span-2">
+                  <p class="text-sm text-gray-600">About us</p>
+                  <p class="text-sm text-gray-600">Services</p>
+                  <p class="text-sm text-gray-600">Blog</p>
+                  <p class="text-sm text-gray-600">Contact us</p>
+                </div>
+                <div class="col-span-2">
+                  <p class="text-sm text-gray-600">About us</p>
+                  <p class="text-sm text-gray-600">Services</p>
+                  <p class="text-sm text-gray-600">Blog</p>
+                  <p class="text-sm text-gray-600">Contact us</p>
+                </div>
+                <div class="col-span-2">
+                  <p class="text-sm text-gray-600">About us</p>
+                  <p class="text-sm text-gray-600">Services</p>
+                  <p class="text-sm text-gray-600">Blog</p>
+                  <p class="text-sm text-gray-600">Contact us</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- grid link end -->
+        </div>
+        <!-- grid footer end -->
+      </div>
+    </section>
+    <!-- footer end-->
+
+    <!-- section coppy -->
+    <section id="coppy">
+      <div class="max-w-full xl:px-32 px-20 gap-20 bg-third">
+        <div class="border-b-2 border-gray-400 mb-8"></div>
+        <p class="text-sm text-primary pb-16">
+          Copyright ©2024. All Rights Reserved.BY-AKKr.
+        </p>
+      </div>
+    </section>
+    <!-- section coppy end-->
+
+    <!-- =====   swiper ========= -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--======  js  ===========  -->
+    <script src="main.js"></script>
+  </body>
+</html>
