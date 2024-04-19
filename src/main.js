@@ -48,3 +48,18 @@ var swiper = new Swiper(".mySwiper_t", {
   mousewheel: true,
   keyboard: true,
 });
+
+///======= accordion======
+const checkBox = document.getElementById("check_box1");
+const tabOne = document.getElementById("tab1");
+
+checkBox.addEventListener("click", function () {
+  tabOne.classList.toggle("hidden");
+});
+
+const checkBox2 = document.getElementById("check_box2");
+const tabTwo = document.getElementById("tab2");
+
+checkBox2.addEventListener("click", function () {
+  tabTwo.classList.toggle("hidden");
+});
